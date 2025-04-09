@@ -1,8 +1,12 @@
 package Actividades;
 
 import java.util.Scanner;
+import java.util.logging.Logger;
 
-public class ejercicioTres {
+public class EjercicioTres {
+
+    public static final Logger LOGGER
+            =Logger.getLogger(EjercicioTres.class.getName());
 
     public static void main(String[] args) {
         //3. Hacer el punto anterior con switch. Se deberá ingresar el carácter “s” para sumar, “r” para restar, “m” para multiplicar y “d” para dividir.
@@ -10,10 +14,10 @@ public class ejercicioTres {
         //Scanner para ingresar numeros
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el primer numero");
+        LOGGER.info("Ingrese el primer número");
         int var1 = scanner.nextInt();
 
-        System.out.println("Ingrese el segundo numero");
+        LOGGER.info("Ingrese el segundo número");
         int var2 = scanner.nextInt();
 
         //variable para resultados
@@ -27,23 +31,25 @@ public class ejercicioTres {
         switch (opcion){
             case "s":
                 resultado = var1 + var2;
-                System.out.println("El resultado de la suma es: " + resultado);
+                LOGGER.info("El resultado de la suma es: " + resultado);
                 break;
 
             case "r":
                 resultado = var1 - var2;
-                System.out.println("El resultado de la a resta es: " + resultado);
+                LOGGER.info("El resultado de la resta es: " + resultado);
                 break;
 
             case "m":
                 resultado = var1 * var2;
-                System.out.println("El resultado de la multiplicación es: " + resultado);
+                LOGGER.info("El resultado de la multiplicación es: " + resultado);
                 break;
 
             case "d":
                 resultado = var1 / var2;
-                System.out.println("El resultado de la division es: " + resultado);
+                LOGGER.info("El resultado de la división es: " + resultado);
                 break;
+            default:
+                LOGGER.info("Opcion no disponible");
             }
         }
     }

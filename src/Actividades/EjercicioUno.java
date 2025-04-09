@@ -1,6 +1,6 @@
 package Actividades;
 
-public class ejercicioUno {
+public class EjercicioUno {
     public static void main(String[] args) {
         //1. Declarar e iniciar 3 variables enteras y comparar cuál  de las 3 es la mayor.
         int var1 = 100;

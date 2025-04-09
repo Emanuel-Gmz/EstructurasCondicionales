@@ -2,7 +2,7 @@ package Actividades;
 
 import java.util.Scanner;
 
-public class ejercicioDos {
+public class EjercicioDos {
     public static void main(String[] args) {
         //2. Como en el laboratorio anterior, declarar 2 variables que permitan realizar operaciones básicas
         //matemáticas y mostrar el resultado en consola. Esta vez, el usuario debe poder elegir qué operación realizar.
